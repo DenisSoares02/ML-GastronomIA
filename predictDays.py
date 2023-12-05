@@ -40,5 +40,5 @@ def predictDays(resultDays):
 
     resultado_inverse = scaler.inverse_transform(resultList.reshape((resultList.shape[0], 1)))
     datax_inverse = scaler.inverse_transform(x)
-
+    resultado_inverse = resultado_inverse.reshape(resultado_inverse.shape[0])
     return resultado_inverse
